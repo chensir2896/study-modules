@@ -6,7 +6,6 @@ import org.apache.ibatis.annotations.Mapper;
 import java.util.List;
 
 /**
- * @author chenzongtong
  * @ClassName UserMapper
  * @Description mapper
  * @Date 2019/6/27 17:57

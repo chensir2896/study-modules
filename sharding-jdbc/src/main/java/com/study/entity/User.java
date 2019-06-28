@@ -3,7 +3,6 @@ package com.study.entity;
 import lombok.Data;
 
 /**
- * @author chenzongtong
  * @ClassName User
  * @Description 实体类
  * @Date 2019/6/27 17:55
