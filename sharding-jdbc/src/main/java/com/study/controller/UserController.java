@@ -1,6 +1,7 @@
 package com.study.controller;
 
 import com.study.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Version 1.0
  */
 @RestController
+@Slf4j
 public class UserController {
 
 
@@ -21,6 +23,7 @@ public class UserController {
 
     @GetMapping("/users")
     public Object list(@RequestParam(value = "master",defaultValue = "false") boolean master) {
+        log.info("list............");
         return userService.list(master);
     }
 }
